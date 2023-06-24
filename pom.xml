@@ -12,7 +12,7 @@
 	<artifactId>backend-carroapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>backend-carroapp</name>
-	<description>Back para carro de compras</description>
+	<description>Back end para carro de compras</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
