@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.zutjmx.backend.carroapp.backendcarroapp.models.entities.Producto;
 import com.zutjmx.backend.carroapp.backendcarroapp.repositories.ProductoRepository;
@@ -16,6 +17,7 @@ public class ProductoServiceImpl implements ProductoService {
     private ProductoRepository productoRepository;
 
     @Override
+    @Transactional(readOnly = true)
     public List<Producto> findAll() {
         return (List<Producto>) productoRepository.findAll();
     }
